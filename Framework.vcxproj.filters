@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Render">
+      <UniqueIdentifier>{38cf424b-9295-4b8c-b1eb-41a92ee65ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{80e0ab7f-9b2b-43fd-94f4-138392f3093c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameManager">
+      <UniqueIdentifier>{94c1e981-9564-420e-9524-1cdf4e4d8bd7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\define.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\log.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\matrix.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\openGLESv2.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\shaderManager.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\videoDriver.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Object.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Rect.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Circle.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\Plane.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="source\SceneManager.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CollisionManager.h">
+      <Filter>GameManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\matrix.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\shaderManager.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\videoDriver.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Main.cpp" />
+    <ClCompile Include="source\Object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Rect.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Circle.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\Plane.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="source\SceneManager.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CollisionManager.cpp">
+      <Filter>GameManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\SceneManager.txt">
+      <Filter>GameManager</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
