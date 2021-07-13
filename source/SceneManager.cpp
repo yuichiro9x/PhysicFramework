@@ -131,12 +131,11 @@ void SceneManager::CheckOnCollision() {
 				CollisionManager::GetInstance()->SetBounce(m_Object[i], m_Object[j]);
 				if (CollisionManager::GetInstance()->CheckGravity(m_Object[i], m_Object[j])) {
 					d++;
+					m_Object[i]->SetGravity(0);
 				}
 			}
 		}
-		if (d != 0) {
-			m_Object[i]->SetGravity(0);
-		} else{
+		if (d == 0) {
 			m_Object[i]->SetGravity(m_Object[i]->GetVelocity());
 		}
 	}

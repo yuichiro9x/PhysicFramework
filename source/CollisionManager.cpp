@@ -164,7 +164,8 @@ bool CollisionManager::CheckOnCollisionPR(std::shared_ptr<Object> o_Plane, std::
 }
 
 void CollisionManager::SetBounce(std::shared_ptr<Object> obj1, std::shared_ptr<Object> obj2) {
-	
+	obj1->AddForce(obj1->GetForceX() * -1 / 2, obj1->GetForceY() * -1 / 2);
+	obj2->AddForce(obj2->GetForceX() * -1 / 2, obj2->GetForceY() * -1 / 2);
 }
 
 bool CollisionManager::CheckGravity(std::shared_ptr<Object> obj1, std::shared_ptr<Object> obj2) {

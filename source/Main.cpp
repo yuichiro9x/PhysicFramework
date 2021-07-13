@@ -120,6 +120,5 @@ int main(int argc, char *argv[])
 	esRegisterMouseUpFunc(&esContext, TouchActionUp);
 	esRegisterMouseMoveFunc(&esContext, TouchActionMove);
 	esMainLoop(&esContext);
-	system("pause");
 	return 1;
 }

@@ -14,7 +14,6 @@ private:
 	xOy m_Pos;
 	xOy m_Force;
 	float m_Mass = 1, m_Velocity = 10, m_Gravity = 10;
-	int m_NumofCollider = 0;
 
 
 public:
